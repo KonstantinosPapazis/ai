@@ -1,0 +1,8 @@
+.terraform.lock.hcl
+.idea
+.terraform
+*/.pytest_cache
+.DS_Store
+terraform.tfstate
+terraform.tfstate.backup
+t
