@@ -1,3 +1,11 @@
+###SageMaker Notebook Log group
+resource "aws_cloudwatch_log_group" "notebook_instances_log_group" {
+  name              = "/aws/sagemaker/NotebookInstances"
+  retention_in_days = 1
+  #kms_key_id        = data.aws_kms_key.pamai_key.arn
+  #tags              = merge(local.common_tags, { "pam:technical:container" = "LogGroup" }, { "pam:technical:purpose" = "Logs" }, { "pam:technical:version" = "v1_0_0" })
+}
+
 #locals {
 #  notebook_instance_name    = "notebook-instance-${var.team_name}"
 #  notebook_instance_type    = "ml.t2.medium"
